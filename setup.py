@@ -27,7 +27,5 @@ setup(name='collective.addthis',
       ],
       entry_points="""
       # -*- Entry points: -*-
-      [z3c.autoinclude]
-      target = plone
       """,
       )
