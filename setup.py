@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.1'
+version = open('collective/addthis/version.txt').readline().strip('\n')
 
 setup(name='collective.addthis',
       version=version,
@@ -11,11 +11,12 @@ setup(name='collective.addthis',
       # Get more strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
         "Programming Language :: Python",
+        "Framework :: Plone",
         ],
-      keywords='',
-      author='',
-      author_email='',
-      url='http://svn.plone.org/svn/collective/',
+      keywords='AddThis',
+      author='Jukka Ojaniemi',
+      author_email='jukka.ojaniemi@gmail.com',
+      url='http://bitbucket.org/pingviini/collective.addthis/wiki/Home',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['collective'],
