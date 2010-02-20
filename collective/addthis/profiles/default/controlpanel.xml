@@ -3,7 +3,7 @@
   <configlet title="Configure AddThis settings" action_id="setAddThisSettings"
     appId="collective.addthis" category="Products"
     condition_expr="python:True"
-    url_expr="string:${portal_url}/addthis-settings"
+    url_expr="string:${portal_url}/addthis-controlpanel"
     visible="True"
     icon="group.gif"
     >
