@@ -37,3 +37,8 @@ class AddThisTestCase(ptc.PloneTestCase):
     This may provide specific set-up and tear-down operations, or provide
     convenience methods.
     """
+
+class AddThisFunctionalTestCase(ptc.FunctionalTestCase):
+    """We use this class for functional integration tests that use doctest
+    syntax. Again, we can put basic common utility or setup code in here.
+    """

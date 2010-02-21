@@ -48,4 +48,12 @@
         provides="Products.GenericSetup.interfaces.EXTENSION"
     />
 
+    <genericsetup:registerProfile
+        name="uninstall"
+        title="AddThis addon uninstall"
+        directory="profiles/uninstall"
+        description="Uninstall profile for collective.addthis"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
 </configure>
