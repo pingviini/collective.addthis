@@ -14,4 +14,4 @@ class IAddThisControlPanel(Interface):
 
 class IAddThisControlPanelForm(Interface):
     addthis_url = schema.URI(title=_(u"AddThis URL"), required=False,)
-    
+    addthis_script_url = schema.URI(title=_(u"AddThis JavaScript URL"), required=False,)

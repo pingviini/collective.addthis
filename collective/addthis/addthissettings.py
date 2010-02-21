@@ -30,6 +30,7 @@ class AddThisControlPanelAdapter(SchemaAdapterBase):
         self.context = pprop.addthis_properties
 
     addthis_url = ProxyFieldProperty(IAddThisControlPanelForm['addthis_url'])
+    addthis_script_url = ProxyFieldProperty(IAddThisControlPanelForm['addthis_script_url'])
 
     def get_addthis_url(self):
         return getattr(self.context, 'addthis_url',
@@ -38,8 +39,17 @@ class AddThisControlPanelAdapter(SchemaAdapterBase):
     def set_addthis_url(self, value):
         if safe_hasattr(self.context, 'addthis_url'):
             self.context.addthis_url = value
+
+    def get_addthis_script_url(self):
+        return getattr(self.context, 'addthis_script_url',
+                       getattr(self.context, 'addthis_script_url', None))
+
+    def set_addthis_script_url(self, value):
+        if safe_hasattr(self.context, 'addthis_script_url'):
+            self.context.addthis_script_url = value
     
     ProxyFieldProperty(IAddThisControlPanelForm['addthis_url'])
+    ProxyFieldProperty(IAddThisControlPanelForm['addthis_script_url'])
 
 
 class AddThisControlPanel(ControlPanelForm):
