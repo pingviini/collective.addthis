@@ -1,0 +1,40 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: collective.addthis\n"
+"POT-Creation-Date: 2010-03-03 20:05+0000\n"
+"PO-Revision-Date: 2010-03-03 22:09+0200\n"
+"Last-Translator: Jukka Ojaniemi <jukka.ojaniemi@jyu.fi>\n"
+"Language-Team: Finnish <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: fi\n"
+"Language-Name: Suomeksi\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.addthis\n"
+
+#: ./interfaces.py:19
+msgid "AddThis JavaScript URL"
+msgstr "AddThis JavaScript URL"
+
+#: ./interfaces.py:18
+msgid "AddThis URL"
+msgstr "AddThis URL"
+
+#: ./addthissettings.py:62
+msgid "AddThis settings"
+msgstr "AddThis asetukset"
+
+#: ./profiles/default/actionicons.xml
+msgid "Configure AddThis"
+msgstr "Muokkaa AddThis lisäosan asetuksia"
+
+#: ./addthissettings.py:64
+msgid "Here you can customize Addthis settings"
+msgstr "Täällä voit muokata AddThis lisäosan asetuksia"
+
+#: ./addthis.pt:3
+msgid "Share"
+msgstr "Jaa"
+
