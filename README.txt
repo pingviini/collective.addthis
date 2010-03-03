@@ -21,3 +21,4 @@ collective.addthis is placed under them in it's own viewlet.
 .. _collective.prettysociable: http://plone.org/products/collective.prettysociable
 .. _collective.plonebookmarklets: http://plone.org/products/plonebookmarklets
 .. _sc.social.bookmarks: http://plone.org/products/sc.social.bookmarks
+.. _collective.sharerizer: http://plone.org/products/collective.sharerizer
