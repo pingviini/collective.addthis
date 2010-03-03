@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = open('collective/addthis/version.txt').readline().strip('\n')
+version = '1.0'
 
 setup(name='collective.addthis',
       version=version,

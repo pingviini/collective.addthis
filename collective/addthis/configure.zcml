@@ -25,10 +25,10 @@
     <browser:viewlet
         name="collective.addthis"
         class=".addthis.AddThisViewlet"
-        for="*"
         manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
         template="addthis.pt"
         permission="zope.Public"
+        layer=".interfaces.IAddthisBrowserLayer"
     />
 
     <browser:page
@@ -36,6 +36,7 @@
         name="addthis-controlpanel"
         class=".addthissettings.AddThisControlPanel"
         permission="cmf.ManagePortal"
+        layer=".interfaces.IAddthisBrowserLayer"
     />
 
     <adapter factory=".addthissettings.AddThisControlPanelAdapter" />
@@ -47,13 +48,5 @@
         description="Extension profile for collective.addthis"
         provides="Products.GenericSetup.interfaces.EXTENSION"
     />
-
-    <genericsetup:registerProfile
-        name="uninstall"
-        title="AddThis addon uninstall"
-        directory="profiles/uninstall"
-        description="Uninstall profile for collective.addthis"
-        provides="Products.GenericSetup.interfaces.EXTENSION"
-      />
 
 </configure>
