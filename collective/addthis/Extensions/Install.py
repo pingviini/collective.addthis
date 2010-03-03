@@ -1,12 +1,8 @@
 from Products.CMFCore.utils import getToolByName
 
 def uninstall(portal, reinstall=False):
-   
-#    setup_tool = getToolByName(portal, 'portal_setup')
-#    setup_tool.setImportContext('profile-collective.addthis:uninstall')
-#    setup_tool.runAllImportSteps()
-#    setup_tool.setImportContext('profile-CMFPlone:plone')
-    
+    """ Take care of uninstall and skip everything if we're reinstalling """
+
     if not reinstall:
         portal_properties = getToolByName(portal, "portal_properties")
         if 'addthis_properties' in portal_properties:
