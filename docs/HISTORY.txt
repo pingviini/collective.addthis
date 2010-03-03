@@ -1,6 +1,12 @@
 Changelog
 =========
 
+1.0.1 Released 2010-03-03
+-------------------------
+
+- Package had missing locales folder and was broken. Fixed and tested
+  that everything works correctly now.
+
 1.0 Released 2010-03-03
 -----------------------
 
