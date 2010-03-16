@@ -4,6 +4,7 @@ Changelog
 1.0.2 Released 2010-03-15
 -------------------------
 - Added random addthis url to jsregistry
+- Changed GS profile name (collective.addthis -> default)
 
 1.0.1 Released 2010-03-03
 -------------------------

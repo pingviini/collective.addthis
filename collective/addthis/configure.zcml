@@ -44,7 +44,7 @@
     <adapter factory=".addthissettings.AddThisControlPanelAdapter" />
     
     <genericsetup:registerProfile
-        name="collective.addthis"
+        name="default"
         title="AddThis addon for Plone"
         directory="profiles/default"
         description="Extension profile for collective.addthis"
