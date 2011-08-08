@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<object name="portal_controlpanel" meta_type="Plone Control Panel Tool">
+  <configlet title="Configure AddThis" action_id="setAddThisSettings"
+    appId="collective.addthis" category="Products"
+    condition_expr="python:True"
+    url_expr="string:${portal_url}/addthis-controlpanel"
+    visible="True"
+    icon_expr="string:$portal_url/++resource++addthis.gif"
+    >
+    <permission>Manage portal</permission>
+    Configure AddThis
+  </configlet>
+</object>

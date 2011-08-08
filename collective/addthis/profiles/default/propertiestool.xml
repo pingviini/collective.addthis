@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<object name="portal_properties" meta_type="Plone Properties Tool">
+ <object name="addthis_properties" meta_type="Plone Property Sheet" purge="True">
+  <property name="title">AddThis settings</property>
+  <property name="addthis_url" type="string" purge="False">http://www.addthis.com/bookmark.php?v=250&amp;username=xa-4b7fc6a9319846fd</property>
+  <property name="addthis_script_url" type="string" purge="False">http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4b7fc6a9319846fd</property>  
+ </object>
+</object>
