@@ -1,24 +1,26 @@
 Introduction
 ============
 
-*collective.addthis* is a simple Plone addon which brings `addthis.com`_ 
-services to Plone pages under document actions.
+*Collective.addthis* is a simple Plone addon which brings [addthis.com][1] 
+services to Plone CMS.
 
-*collective.addthis* has customizable addthis url (pointing to your addthis
-username) and addthis javascript url (pointing to addthis javascript url).
-Those settings have default values which I got from `addthis.com`_ so that testing
-collective.addthis is easy. Those values are recommended to be changed if you're
-actually planning to use this addon.
+*Collective.addthis* has customizable addthis url (pointing to your AddThis
+username) and AddThis javascript url (pointing to addthis javascript url).
+By default those settings have random values I got from [addthis.com][1] so
+that testing collective.addthis would be easy. Those values are recommended
+to be changed if you're planning to use this addon in production.
 
-There are few other similar addons for Plone (`collective.prettysociable`_,
-`collective.plonebookmarklets`_, `sc.social.bookmarks`_) which does the same job,
-but they were too much customized to some direction to suit some specific needs.
-New `collective.sharerizer`_ is closest relative to *collective.addthis*. Differences
-between these two are that collective.sharerizer overrides document_actions where
-collective.addthis is placed under them in it's own viewlet.
+There are few other similar addons for Plone which does the same job with
+different approach. If *collective.addthis* doesn't do the job for you I
+suggest to check these out too:
 
-.. _addthis.com: http://www.addthis.com 
-.. _collective.prettysociable: http://plone.org/products/collective.prettysociable
-.. _collective.plonebookmarklets: http://plone.org/products/plonebookmarklets
-.. _sc.social.bookmarks: http://plone.org/products/sc.social.bookmarks
-.. _collective.sharerizer: http://plone.org/products/collective.sharerizer
+* [collective.prettysociable][2]
+* [collective.plonebookmarklets][3]
+* [sc.social.bookmarks][4]
+* [collective.sharerizer][5]
+
+[1]: http://www.addthis.com/    "AddThis.com"
+[2]: http://plone.org/products/collective.prettysociable
+[3]: http://plone.org/products/plonebookmarklets
+[4]: http://plone.org/products/sc.social.bookmarks
+[5]: http://plone.org/products/collective.sharerizer
