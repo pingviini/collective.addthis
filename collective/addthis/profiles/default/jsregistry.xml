@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <object name="portal_javascripts">
 
- <javascript cacheable="True" compression="safe" cookable="True" enabled="True"
+ <javascript cacheable="False" compression="none" cookable="False" enabled="True"
      expression="" id="http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4b7fc6a9319846fd" 
      inline="False" />
 
