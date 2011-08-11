@@ -19,37 +19,38 @@ from collective.addthis import _
 
 
 class AddThisControlPanelAdapter(SchemaAdapterBase):
-    
     adapts(IPloneSiteRoot)
     implements(IAddThisControlPanelForm)
-    
+
     def __init__(self, context):
         super(AddThisControlPanelAdapter, self).__init__(context)
         self.portal = getSite()
         pprop = getToolByName(self.portal, 'portal_properties')
         self.context = pprop.addthis_properties
 
-    addthis_url = ProxyFieldProperty(IAddThisControlPanelForm['addthis_url'])
-    addthis_script_url = ProxyFieldProperty(IAddThisControlPanelForm['addthis_script_url'])
-
     def get_addthis_url(self):
         return getattr(self.context, 'addthis_url',
                        getattr(self.context, 'addthis_url', None))
-
     def set_addthis_url(self, value):
         if safe_hasattr(self.context, 'addthis_url'):
             self.context.addthis_url = value
+    addthis_url = ProxyFieldProperty(IAddThisControlPanelForm['addthis_url'])
 
     def get_addthis_script_url(self):
         return getattr(self.context, 'addthis_script_url',
                        getattr(self.context, 'addthis_script_url', None))
-
     def set_addthis_script_url(self, value):
         if safe_hasattr(self.context, 'addthis_script_url'):
             self.context.addthis_script_url = value
-    
-    ProxyFieldProperty(IAddThisControlPanelForm['addthis_url'])
-    ProxyFieldProperty(IAddThisControlPanelForm['addthis_script_url'])
+    addthis_script_url = ProxyFieldProperty(IAddThisControlPanelForm['addthis_script_url'])
+
+    def get_addthis_chicklets(self):
+        return getattr(self.context, 'addthis_chicklets',
+                       getattr(self.context, 'addthis_chicklets', []))
+    def set_addthis_chicklets(self, value):
+        if safe_hasattr(self.context, 'addthis_chicklets'):
+            self.context.addthis_chicklets = value
+    addthis_chicklets = ProxyFieldProperty(IAddThisControlPanelForm['addthis_chicklets'])
 
 
 class AddThisControlPanel(ControlPanelForm):

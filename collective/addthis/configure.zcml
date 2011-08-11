@@ -12,17 +12,17 @@
     <browser:resource
         name="addthis.js"
         file="addthis.js"
-    />
+        />
 
     <browser:resource
         name="addthis.css"
         file="addthis.css"
-    />
+        />
 
     <browser:resource
         name="addthis.gif"
         file="addthis.gif"
-    />
+        />
 
     <browser:viewlet
         name="collective.addthis"
@@ -31,7 +31,7 @@
         template="addthis.pt"
         permission="zope.Public"
         layer=".interfaces.IAddthisBrowserLayer"
-    />
+        />
 
     <browser:page
         for="Products.CMFPlone.interfaces.IPloneSiteRoot"
@@ -39,16 +39,22 @@
         class=".addthissettings.AddThisControlPanel"
         permission="cmf.ManagePortal"
         layer=".interfaces.IAddthisBrowserLayer"
-    />
+        />
 
     <adapter factory=".addthissettings.AddThisControlPanelAdapter" />
-    
+
+    <utility factory=".social_media.SocialMediaSources" />
+    <utility
+        component=".social_media.socialMediaVocabulary"
+        name="AddThis Social Media"
+        />
+
     <genericsetup:registerProfile
         name="default"
         title="AddThis addon for Plone"
         directory="profiles/default"
         description="Extension profile for collective.addthis"
         provides="Products.GenericSetup.interfaces.EXTENSION"
-    />
+        />
 
 </configure>
