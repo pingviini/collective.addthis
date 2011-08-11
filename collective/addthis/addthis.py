@@ -17,9 +17,13 @@ class AddThisViewlet(common.ViewletBase):
 
     @property
     def chicklets(self):
+        chicklet_names = self._settings.addthis_chicklets
         vocab = getUtility(IVocabularyFactory, name="AddThis Social Media")
-        results = [term for term in vocab(self.context)
-                   if term.value in self._settings.addthis_chicklets]
+        chicklets = [term for term in vocab(self.context)
+                   if term.value in chicklet_names]
+        results = [None] * len(chicklet_names)
+        for chick in chicklets:
+            results[chicklet_names.index(chick.value)] = chick
         return results
 
     def getAddThisURL(self):
