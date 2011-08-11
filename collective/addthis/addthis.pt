@@ -2,11 +2,9 @@
 <div class="addthis_toolbox addthis_default_style" id="socialtools" i18n:domain="collective.addthis">
     <a href="#" class="addthis_button_compact" tal:attributes="href view/getAddThisURL" i18n:translate="">Share</a>
     <span class="addthis_separator">|</span>
-    <a class="addthis_button_facebook"></a>
-    <a class="addthis_button_blogger"></a>
-    <a class="addthis_button_livejournal"></a>
-    <a class="addthis_button_wordpress"></a>
-    <a class="addthis_button_google"></a>
-    <a class="addthis_button_twitter"></a>
+    <tal:chicklet-block repeat="chicklet view/chicklets">
+        <tal:comment replace="nothing">The closing the a tag below is important. If it is not closed this way, illegitimate chicklets randomly show up on the page.</tal:comment>
+        <a tal:attributes="class python:'addthis_button_%s' % chicklet.value"></a>
+    </tal:chicklet-block>
 </div>
 <!-- AddThis Button END -->
