@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.1 Unreleased
+--------------
+- Added a configuration setting that allows the user to select which
+  chicklets display on the page. [pumazi]
+
 1.0.2 Released 2010-03-15
 -------------------------
 - Added random addthis url to jsregistry
@@ -12,6 +17,6 @@ Changelog
   that everything works correctly now.
 
 1.0 Released 2010-03-03
-----------------------
+-----------------------
 - Initial release
 - Adds addthis viewlet under content body
