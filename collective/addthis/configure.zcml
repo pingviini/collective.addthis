@@ -57,4 +57,15 @@
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
 
+    <genericsetup:upgradeDepends
+        title="Addition of the chicklet property settings"
+        description="Sets the chicklet settings to use the default set so that existing behavior does not change."
+        source="2"
+        destination="3"
+        profile="collective.addthis:default"
+        import_steps="propertiestool"
+        purge="False"
+        run_deps="False"
+        />
+
 </configure>
