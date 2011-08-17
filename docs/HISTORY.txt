@@ -1,22 +1,28 @@
 Changelog
 =========
 
-1.1 Unreleased
---------------
+1.1 Released 2011-08-17
+-----------------------
 - Added a configuration setting that allows the user to select which
   chicklets display on the page. [pumazi]
 
+1.0.3 Released 2010-11-26
+-------------------------
+- External javascript cannot be cached, cooked or merged (klingel).
+- Removed a comma from the javscript to fix an error in IE (huub_bouma).
+- Changed the default UI langage from Finnish to English (huub_bouma).
+
 1.0.2 Released 2010-03-15
 -------------------------
-- Added random addthis url to jsregistry
-- Changed GS profile name (collective.addthis -> default)
+- Added random addthis url to jsregistry.
+- Changed GS profile name (collective.addthis -> default).
 
 1.0.1 Released 2010-03-03
 -------------------------
-- Package had missing locales folder and was broken. Fixed and tested
+- Package had missing locales folder and was broken. Fixed and tested.
   that everything works correctly now.
 
 1.0 Released 2010-03-03
 -----------------------
-- Initial release
-- Adds addthis viewlet under content body
+- Initial release.
+- Adds addthis viewlet under content body.
