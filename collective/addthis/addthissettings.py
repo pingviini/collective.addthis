@@ -55,7 +55,7 @@ class AddThisControlPanelAdapter(SchemaAdapterBase):
 
 class AddThisControlPanel(ControlPanelForm):
     """ Pathkey control panel """
-    
+
     implements(IAddThisControlPanel)
 
     form_fields = FormFields(IAddThisControlPanelForm)
@@ -63,3 +63,4 @@ class AddThisControlPanel(ControlPanelForm):
     form_name = _(u"AddThis settings")
     label = _(u"AddThis settings")
     description = _(u"Here you can customize Addthis settings")
+

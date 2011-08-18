@@ -31,3 +31,4 @@ class AddThisViewlet(common.ViewletBase):
         AddThis.com when this addon was developed. 
         """
         return self._settings.addthis_url or "http://www.addthis.com/bookmark.php?v=250&amp;username=xa-4b7fc6a9319846fd"
+
