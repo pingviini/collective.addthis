@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.1.1 Released 2011-08-18
+-------------------------
+- Fixed packaging problems.
+
 1.1 Released 2011-08-17
 -----------------------
 - Added a configuration setting that allows the user to select which
